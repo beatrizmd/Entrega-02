@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="estilo.css">
+	<title>Projeto WebDev</title>
+</head>
+<body>
+		<header class="cabecalho">
+			<h1 id='ola'>BeatrizMagalhaesDias</h1>
+			<center><button onclick="mudarTexto()">
+				Mudar título
+			</button></center>
+	
+			<h2>Gestão Ambiental - EACH USP</h2>
+			<h3> Links importantes:</h3>
+			<nav>
+				<ul>
+				<li><a href="https://cssreference.io/" target="_blank">CSS Reference</a></li>
+				<li><a href="https://htmlcolorcodes.com/color-picker/" target="_blank">Código de Cores</a></li>
+				<li><a href="https://github.com/beatrizmd" target="_blank">GitHub</a></li>
+				<li><a href="http://www.google.com" target="_blank">Google</a></li>
+				</ul>
+			</nav>
+	
+		</header>
+		<main>
+			<section>
+				<p>
+
+Meu nome é Beatriz, tenho 19 anos e estou no quinto semestre de Gestão Ambiental na Escola de Artes, Ciências e Humanidades da Universidade de São Paulo. Gestão Ambiental é um curso que abrange todas as 3 grandes ciências (exatas, biológicas e humanas). Dessa forma, é uma graduação muito completa, interdisciplinar e que nos permite estudar uma ampla gama de conteúdos. Apesar de não ser uma profissão que pretendo exercer no futuro, foi um curso que me acrescentou muito e me fez abrir os olhos para muitos problemas que existem atualmente. </p>
+				<p>
+A área de T.I. sempre me interessou, principalmente pelo fato de ter irmãs que trabalham na área e gostam do que fazem. Acredito que é um ramo muito promissor e necessário. Por ter esse interesse, vi no WebDev uma grande oportunidade, já que eu não possuía experiência e estava muito disposta a aprender desenvolvimento web, ainda mais pelo fato de ser voltado em causar impacto social.
+		</p>
+
+			</section>
+			
+		</main>
+		<footer>
+			<span>
+				Todos os direitos reservados. 
+			</span>
+		</footer>
+
+</body>
+<script>
+	/* var meunome = document.getElementById('meunome')
+
+	console.log(meunome)
+	var textoDomeunome = meunome.textContent
+
+	console.log(textoDomeunome)
+
+	meunome.textContent = "não é mais meu nome" */
+
+function mudarTexto() {
+
+	var ola = document.getElementById('ola')
+	console.log (ola.textContent)
+
+if (ola.textContent == 'BeatrizMagalhaesDias') {
+	ola.textContent = 'tchau'
+	console.log (ola.textContent)
+}
+
+else if(ola.textContent  == 'tchau') {
+	ola.textContent = 'BeatrizMagalhaesDias'
+
+}
+
+
+}
+
+</script>
+</html>
